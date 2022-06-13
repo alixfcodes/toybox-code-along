@@ -4,7 +4,7 @@
 // tertiary (green): #f8fbf3; 
 // quaternary (pink): #fff5f5; 
 // quinary (orange): #ffd698;
-// pastel blue: #d3f0f9 
+// pastel blue: #d3f0f9;
 // white: #fff; 
 
 // HEADINGS:
@@ -14,8 +14,6 @@
 // h4: 34px;
 // h5: 14px;
 
-header {
-    width: 100%;
-}
-
+@import "./partials/setup";
+@import "./partials/variables";
 
