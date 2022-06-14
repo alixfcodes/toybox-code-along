@@ -1,0 +1,18 @@
+header .wrapper { 
+    display: flex;
+    width: 100%;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerImgContainer {
+    width: 48%;
+}
+
+.textContainer {
+    width: 48%;
+}
+
+// Pixel margin 0 auto
+// width
