@@ -1,0 +1,39 @@
+img { 
+    max-width: 100%;
+    display: block;
+}
+
+.wrapper {
+    max-width: 1260px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.button {
+    padding: 18px 36px;
+    border: 2px solid $primary;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.shopButton {
+    color: $primary;
+    background-color: transparent;
+    &:hover, 
+    &:focus {
+        color: $solidWhite;
+        background-color: $primary;
+    }
+}
+
+.aboutButton {
+    color: $solidWhite;
+    background-color: $primary;
+    &:hover, 
+    &:focus {
+        color: $primary;
+        background-color: transparent;
+    }
+}
