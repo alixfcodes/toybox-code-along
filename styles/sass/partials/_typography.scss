@@ -38,6 +38,13 @@ h1, h2, h3, h4, blockquote {
     margin: 0;
 }
 
+h3, h5 {
+    font-family: $bodyFont;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
 // Set heading font size
 // h1: 28px;
 // h2: 40px;
@@ -52,13 +59,13 @@ h2 {
     font-size: 2rem;
 }
 h3 {
-    font-size: 2.7rem;
+    font-size: 0.7rem;
 }
 h4 {
     font-size: 1.7rem;
 }
 h5 { 
-    font-size: 0.4rem;
+    font-size: 0.8rem;
 }
 
 ul,

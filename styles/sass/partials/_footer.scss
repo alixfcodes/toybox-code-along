@@ -1,0 +1,36 @@
+footer {
+    background-color: $primary;
+    color: $solidWhite;
+    padding: 75px;
+    .footerFlexContainer {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.footerLogo h4 {
+     color: $solidWhite;
+}
+
+.footerNav {
+    width: 45%;
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    a {
+        color: rgba($solidWhite, $alpha: 1);
+        &:hover {
+            color: rgba($solidWhite, $alpha: 0.5);
+        }
+    }
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    i {
+        margin: 0 10px;
+    }
+}
