@@ -488,6 +488,10 @@ header .wrapper {
   width: 48%;
 }
 
+.categories {
+  margin-top: 90px;
+}
+
 .categoryList {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -526,4 +530,30 @@ header .wrapper {
 .categoryList .items:hover {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
+}
+
+.play {
+  background-image: url(../assets/background-image.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 90vh;
+}
+.play .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 90vh;
+}
+.play .wrapper .playContent {
+  width: 60%;
+  border: 24px solid #f4fcff;
+  padding: 60px;
+  background-color: #fff;
+  text-align: center;
 }

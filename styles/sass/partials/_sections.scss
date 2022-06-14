@@ -1,4 +1,9 @@
 // Categories
+
+.categories {
+    margin-top: 90px;
+}
+
 .categoryList {
     display: flex;
     flex-wrap: wrap;
@@ -38,3 +43,23 @@
 }
 
 // Let Them Play
+
+.play {
+    background-image: url(../assets/background-image.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 90vh;
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 90vh;
+        .playContent{
+            width: 60%;
+            border: 24px solid $secondary;
+            padding: 60px;
+            background-color: $solidWhite;
+            text-align: center;
+        }
+    }
+}
