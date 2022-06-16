@@ -1,28 +1,33 @@
 footer {
     background-color: $primary;
     color: $solidWhite;
-    padding: 75px;
+    padding: 90px 0 50px 0;
     .footerFlexContainer {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 90px;
+    }
+    .footerLogo h4 {
+        color: $solidWhite;
     }
 }
 
-.footerLogo h4 {
-    color: $solidWhite;
-}
-
 .footerNav {
-    width: 45%;
+    width: 40%;
     nav {
         display: flex;
         justify-content: space-between;
     }
+    ul {
+        width: 33%;
+    }
     li {
-            padding-bottom: 10px;
-        }
+        padding-bottom: 10px;
+    }
     a {
         color: rgba($solidWhite, $alpha: 1);
+        font-size: 0.8rem;
+		line-height: 1.5rem;
         &:hover {
             color: rgba($solidWhite, $alpha: 0.5);
         }
@@ -33,6 +38,9 @@ footer {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
+    a {
+        margin-right: 10px;
+    }
     i {
         margin: 10px 0;
     }

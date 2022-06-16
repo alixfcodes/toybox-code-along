@@ -1,26 +1,24 @@
 header {
-    background-color: $tertiary;
-}
-
-header .wrapper { 
-    display: flex;
-    width: 100%;
-    margin: 0;
-    justify-content: space-between;
-    align-items: center;
-    .headerImgContainer {
-        width: 40%;
-    }
-    .textContainer {
-        padding: 0 100px;
-        width: 56%;
-        h3 {
-            padding-bottom: 25px;
-        }
-        p {
-            padding-bottom: 20px;
-        }
-    }
+	background-color: $tertiary;
+	margin-bottom: 90px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	.headerImgContainer{
+		width: 45%;
+		img {
+			max-width: 100%;
+			display: block;
+		}
+	}
+	.headerContent {
+		width: 55%;
+		color: $primary;
+		.contentContainer{
+			margin: 0 auto;
+			width: 65%;
+		}
+	}
 }
 
 // contact page header style

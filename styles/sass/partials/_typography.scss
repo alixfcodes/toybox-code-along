@@ -27,7 +27,7 @@ html {
 
 body {
     font-family: $bodyFont;
-    font-weight: normal;
+    font-size: 1rem;
     color: $primary;
 }
 
@@ -36,13 +36,6 @@ h1, h2, h3, h4, blockquote {
     font-weight: normal;
     color: $primary;
     margin: 0;
-}
-
-h3, h5 {
-    font-family: $bodyFont;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
 }
 
 // Set heading font size
@@ -55,23 +48,35 @@ h3, h5 {
 h1 {
     font-size: 1.4rem;
 }
+
 h2 {
     font-size: 2rem;
-}
-h3 {
-    font-size: 0.7rem;
-}
-h4 {
-    font-size: 1.7rem;
-}
-h5 { 
-    font-size: 0.8rem;
+    line-height: 2.4rem;
+	margin-bottom: 18px;
 }
 
-ul,
-li, 
-a,
-input {
+h3 {
+    font-size: 2.7rem;
+    line-height: 3rem;
+	margin-bottom: 24px;
+}
+
+h4 {
+    font-size: 1.7rem;
+    line-height: 2rem;
+	margin-bottom: 18px;
+}
+
+h5 { 
+	font-size: 0.7rem;
+	font-weight: bold;
+	line-height: 1.2rem;
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+	margin: 0 0 24px 0;
+}
+
+ul, li, a, input {
     margin: 0;
     padding: 0;
 }
@@ -81,15 +86,22 @@ ul {
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+	transition: 0.3s;
 }
 
-.smallCopy {
-    font-size: 0.6rem;
-    font-weight: bold;
-    margin: 0;
-    line-height: 1.2rem;
+p {
+	line-height: 1.5rem;
+	margin: 0 0 30px 0;
+
+    &.smallCopy {
+        font-size: 0.6rem;
+        font-weight: bold;
+        margin: 0;
+        line-height: 1.2rem;
+    }
 }
 
 button {

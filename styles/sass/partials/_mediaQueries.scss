@@ -1,44 +1,72 @@
 // Breakpoints at 1000/800/500
 
+/* 1000px screen-size devices and smaller */
 @media (max-width: 1000px) {
+    // Header
+    header {
+	    .headerImgContainer {
+			img {
+				height: 100vh;
+				object-fit: cover;
+				display: block;
+			}
+		}
+	}
     // Categories
-    .categoryList .items {
-        padding: 25px;
+    .categoryList {
+        .items {
+            padding: 25px;
+        }
     }
 
     // Footer
     .footerFlexContainer {
         flex-direction: column;
         align-items: center;
-        .footerNav {
-            width: 100%;
-            margin-bottom: 60px;
-        }
+        margin-bottom: 100px;
+        .footerLogo {
+			margin-bottom: 30px;
+		}
     }
+    .footerNav {
+        width: 80%;
+        nav {
+			ul {
+				width: auto;
+			}
+		}
+    }  
 }
 
 @media (max-width: 800px) {
+    h4 {
+		font-size: 1.5rem;
+		line-height: 1.7rem;
+	}
     // Header
-    header .wrapper {
+    header {
         flex-direction: column;
-        .headerImgContainer,
-        .textContainer {
+        .headerImgContainer {
             width: 100%;
+            img {
+                max-height: 350px;
+                object-fit: cover;
+                width: 100%;
+            }
         }
-        .textContainer {
-            padding: 60px;
-        }
-        img {
-            max-height: 350px;
-            object-fit: cover;
+        .headerContent {
             width: 100%;
+            padding: 60px 0;
         }
     }
 
     // Categories
-    .categoryList .items {
-        padding: 15px;
-        margin: 20px 15px;
+    .categoryList {
+        justify-content: space-evenly;
+        .items {
+            padding: 15px;
+            margin: 20px 15px;
+        }
     }
 
     // Play
@@ -46,6 +74,9 @@
         width: 100%;
         padding: 30px;
     }
+
+    // Footer 
+
 }
 
 @media (max-width: 500px) {
@@ -61,16 +92,27 @@
     }
 
     // Footer
-    .footerNav nav {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin: 0 15px;
-    }
 
+    footer {
+		.footerFlexContainer {
+			margin-bottom: 60px;
+		}
+		.footerNav {
+			nav {
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+				ul {
+					margin-bottom: 25px;
+					width: 100%;
+				}
+			}
+		}
+	}
     .social {
         flex-direction: column;
         align-items: center;
+        text-align: center;
         .copyright {
             padding-top: 10px;
         }

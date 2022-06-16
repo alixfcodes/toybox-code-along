@@ -2,10 +2,11 @@
 $headingFont: "Young Serif";
 $bodyFont: "Jakarta Sans";
 
-// Font Sizes
+// Font Sizes 
+/* if we set our root element font-size to 125%, then 1 rem = 20px */
 $baseFontSize: 1rem;
 
-// Colours (font background)
+// Colours (font/background)
 $primary: #084b6d;
 $secondary: #f4fcff;
 $tertiary: #f8fbf3; 
