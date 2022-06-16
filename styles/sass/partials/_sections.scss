@@ -1,7 +1,7 @@
 // Categories
 
 .categories {
-    margin-top: 90px;
+    margin: 90px 0;
 }
 
 .categoryList {
@@ -60,6 +60,12 @@
             padding: 60px;
             background-color: $solidWhite;
             text-align: center;
+            h3 {
+                padding-bottom: 25px;
+            }
+            p { 
+                padding-bottom: 20px;
+            }
         }
     }
 }

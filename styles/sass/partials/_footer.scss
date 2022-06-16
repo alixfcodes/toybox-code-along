@@ -9,7 +9,7 @@ footer {
 }
 
 .footerLogo h4 {
-     color: $solidWhite;
+    color: $solidWhite;
 }
 
 .footerNav {
@@ -18,6 +18,9 @@ footer {
         display: flex;
         justify-content: space-between;
     }
+    li {
+            padding-bottom: 10px;
+        }
     a {
         color: rgba($solidWhite, $alpha: 1);
         &:hover {
@@ -29,8 +32,8 @@ footer {
 .social {
     display: flex;
     justify-content: space-between;
-    margin-top: 25px;
+    margin-top: 30px;
     i {
-        margin: 0 10px;
+        margin: 10px 0;
     }
 }

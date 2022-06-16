@@ -8,21 +8,19 @@ header .wrapper {
     margin: 0;
     justify-content: space-between;
     align-items: center;
-    // .headerContainer {
-    //     background-color: $tertiary;
-    //     width: 100%;
-    //     height: 100%;
-    //     padding: 60px;
-    //     margin: 0 auto;
-    // }
-}
-
-.headerImgContainer {
-    width: 48%;
-}
-
-.textContainer {
-    width: 48%;
+    .headerImgContainer {
+        width: 40%;
+    }
+    .textContainer {
+        padding: 0 100px;
+        width: 56%;
+        h3 {
+            padding-bottom: 25px;
+        }
+        p {
+            padding-bottom: 20px;
+        }
+    }
 }
 
 // contact page header style

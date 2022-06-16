@@ -21,8 +21,12 @@
     // Header
     header .wrapper {
         flex-direction: column;
-        .headerImgContainer {
+        .headerImgContainer,
+        .textContainer {
             width: 100%;
+        }
+        .textContainer {
+            padding: 60px;
         }
         img {
             max-height: 350px;
@@ -40,7 +44,7 @@
     // Play
     .play .wrapper .playContent {
         width: 100%;
-        padding: 15px;
+        padding: 30px;
     }
 }
 
@@ -53,7 +57,7 @@
 
     // Play
     .play .wrapper .playContent {
-        padding: 10px 10px 15px;
+        padding: 15px 15px 20px;
     }
 
     // Footer
@@ -67,6 +71,8 @@
     .social {
         flex-direction: column;
         align-items: center;
-
+        .copyright {
+            padding-top: 10px;
+        }
     }
 }

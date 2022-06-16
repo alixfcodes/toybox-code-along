@@ -490,13 +490,18 @@ header .wrapper {
       -ms-flex-align: center;
           align-items: center;
 }
-
-.headerImgContainer {
-  width: 48%;
+header .wrapper .headerImgContainer {
+  width: 40%;
 }
-
-.textContainer {
-  width: 48%;
+header .wrapper .textContainer {
+  padding: 0 100px;
+  width: 56%;
+}
+header .wrapper .textContainer h3 {
+  padding-bottom: 25px;
+}
+header .wrapper .textContainer p {
+  padding-bottom: 20px;
 }
 
 .contactHeader {
@@ -526,7 +531,7 @@ header .wrapper {
 }
 
 .categories {
-  margin-top: 90px;
+  margin: 90px 0;
 }
 
 .categoryList {
@@ -594,6 +599,12 @@ header .wrapper {
   background-color: #fff;
   text-align: center;
 }
+.play .wrapper .playContent h3 {
+  padding-bottom: 25px;
+}
+.play .wrapper .playContent p {
+  padding-bottom: 20px;
+}
 
 .contact form {
   display: -webkit-box;
@@ -603,7 +614,8 @@ header .wrapper {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 90px 0;
+  margin: 90px auto;
+  max-width: 1000px;
 }
 
 input,
@@ -724,6 +736,9 @@ footer .footerFlexContainer {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.footerNav li {
+  padding-bottom: 10px;
+}
 .footerNav a {
   color: white;
 }
@@ -738,10 +753,10 @@ footer .footerFlexContainer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 25px;
+  margin-top: 30px;
 }
 .social i {
-  margin: 0 10px;
+  margin: 10px 0;
 }
 
 @media (max-width: 1000px) {
@@ -770,8 +785,12 @@ footer .footerFlexContainer {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  header .wrapper .headerImgContainer {
+  header .wrapper .headerImgContainer,
+header .wrapper .textContainer {
     width: 100%;
+  }
+  header .wrapper .textContainer {
+    padding: 60px;
   }
   header .wrapper img {
     max-height: 350px;
@@ -787,7 +806,7 @@ footer .footerFlexContainer {
 
   .play .wrapper .playContent {
     width: 100%;
-    padding: 15px;
+    padding: 30px;
   }
 }
 @media (max-width: 500px) {
@@ -797,7 +816,7 @@ footer .footerFlexContainer {
   }
 
   .play .wrapper .playContent {
-    padding: 10px 10px 15px;
+    padding: 15px 15px 20px;
   }
 
   .footerNav nav {
@@ -820,5 +839,8 @@ footer .footerFlexContainer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .social .copyright {
+    padding-top: 10px;
   }
 }
