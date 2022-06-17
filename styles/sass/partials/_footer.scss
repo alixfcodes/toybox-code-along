@@ -19,17 +19,14 @@ footer {
         justify-content: space-between;
     }
     ul {
-        width: 33%;
-    }
-    li {
-        padding-bottom: 10px;
+        width: calc(100% / 3);
     }
     a {
-        color: rgba($solidWhite, $alpha: 1);
+        color: rgba($solidWhite, $alpha: 0.5);
         font-size: 0.8rem;
 		line-height: 1.5rem;
-        &:hover {
-            color: rgba($solidWhite, $alpha: 0.5);
+        &:hover, &:focus {
+            color: rgba($solidWhite, $alpha: 1);
         }
     }
 }

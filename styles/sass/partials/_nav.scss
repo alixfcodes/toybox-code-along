@@ -40,11 +40,16 @@
         &:checked ~ .slideOutNav {
             left: 0;
         }
+        &:focus + label {
+			border: 1px dotted $primary;
+		}
     }
-}
-
-.menuButton {
-    cursor: pointer;
+    .menuButton {
+        cursor: pointer;
+    }
+    .logo {
+		margin-left: 60px;
+	}
 }
 
 .searchCart {
@@ -74,6 +79,7 @@
 
 .slideOutNav {
     background-color: $primary;
+    border-right: 1px solid $secondary;
     position: fixed;
     top: 0; 
     left: -506px;
@@ -81,30 +87,33 @@
     width: 100%;
     max-width: 506px;
     padding: 35px 50px;
+    z-index: 20;
     transition: 0.75s;
-}
-
-.mainMenu {
-    a {
-        font-family: $headingFont;
-        font-size: 1.6rem;
-        line-height: 2.5rem;
-        color: rgba($color: $solidWhite, $alpha: 1);
-        transition: 0.3s;
-        &:hover, &:focus {
-            color: rgba($color: $solidWhite, $alpha: 0.5);
+    display: flex;
+    flex-direction: column;
+    .buttonContainer {
+        display: flex;
+        justify-content: flex-end;
+        button {
+			padding: 10px 0 10px 20px;
+		}
+    }
+    .menuClose {
+        color: $solidWhite;
+        font-size: 1.2rem;
+        display: block;
+        cursor: pointer;
+    }
+    .mainMenu {
+        a {
+            font-family: $headingFont;
+            font-size: 1.6rem;
+            line-height: 2.5rem;
+            color: rgba($color: $solidWhite, $alpha: 1);
+            transition: 0.3s;
+            &:hover, &:focus {
+                color: rgba($color: $solidWhite, $alpha: 0.5);
+            }
         }
     }
-}
-
-.buttonContainer {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.menuClose {
-    color: $solidWhite;
-    font-size: 1.2rem;
-    display: block;
-    cursor: pointer;
 }

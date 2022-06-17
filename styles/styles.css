@@ -224,13 +224,13 @@ template {
 /* if we set our root element font-size to 125%, then 1 rem = 20px */
 @font-face {
   font-family: "Jakarta Sans";
-  src: url("../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Regular.woff"), url(../fonts/PlusJakarta_Sans-2.5/static/PlusJakartaSans-Regular.ttf), url(../../../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Regular.woff2);
+  src: url("../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Regular.woff"), url("../fonts/PlusJakarta_Sans-2.5/static/PlusJakartaSans-Regular.ttf"), url("../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Regular.woff2");
   font-weight: normal;
 }
 /* importing Jakarta Sans font in bold */
 @font-face {
   font-family: "Jakarta Sans";
-  src: url("../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Bold.woff"), url(../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Bold.woff2), url(../fonts/PlusJakarta_Sans-2.5/static/PlusJakartaSans-Bold.ttf);
+  src: url("../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Bold.woff"), url("../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Bold.woff2"), url("../fonts/PlusJakarta_Sans-2.5/static/PlusJakartaSans-Bold.ttf");
   font-weight: bold;
 }
 @font-face {
@@ -247,7 +247,7 @@ body {
   color: #084b6d;
 }
 
-h1, h2, h3, h4, blockquote {
+h1, h2, h3, h4 {
   font-family: "Young Serif";
   font-weight: normal;
   color: #084b6d;
@@ -403,9 +403,14 @@ img {
 .navBar input[type=checkbox]:checked ~ .slideOutNav {
   left: 0;
 }
-
-.menuButton {
+.navBar input[type=checkbox]:focus + label {
+  border: 1px dotted #084b6d;
+}
+.navBar .menuButton {
   cursor: pointer;
+}
+.navBar .logo {
+  margin-left: 60px;
 }
 
 .searchCart {
@@ -443,6 +448,7 @@ img {
 
 .slideOutNav {
   background-color: #084b6d;
+  border-right: 1px solid #f4fcff;
   position: fixed;
   top: 0;
   left: -506px;
@@ -450,23 +456,18 @@ img {
   width: 100%;
   max-width: 506px;
   padding: 35px 50px;
+  z-index: 20;
   -webkit-transition: 0.75s;
   transition: 0.75s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-
-.mainMenu a {
-  font-family: "Young Serif";
-  font-size: 1.6rem;
-  line-height: 2.5rem;
-  color: white;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-.mainMenu a:hover, .mainMenu a:focus {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.buttonContainer {
+.slideOutNav .buttonContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -474,12 +475,25 @@ img {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-
-.menuClose {
+.slideOutNav .buttonContainer button {
+  padding: 10px 0 10px 20px;
+}
+.slideOutNav .menuClose {
   color: #fff;
   font-size: 1.2rem;
   display: block;
   cursor: pointer;
+}
+.slideOutNav .mainMenu a {
+  font-family: "Young Serif";
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.slideOutNav .mainMenu a:hover, .slideOutNav .mainMenu a:focus {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 header {
@@ -753,18 +767,15 @@ footer .footerLogo h4 {
           justify-content: space-between;
 }
 .footerNav ul {
-  width: 33%;
-}
-.footerNav li {
-  padding-bottom: 10px;
+  width: 33.3333333333%;
 }
 .footerNav a {
-  color: white;
+  color: rgba(255, 255, 255, 0.5);
   font-size: 0.8rem;
   line-height: 1.5rem;
 }
-.footerNav a:hover {
-  color: rgba(255, 255, 255, 0.5);
+.footerNav a:hover, .footerNav a:focus {
+  color: white;
 }
 
 .social {
