@@ -23,16 +23,14 @@
 	<nav class="navBar">
 		<div class="wrapper">
 			<!--  Slide Out Menu -->
-			<input type="checkbox" id="openSideMenu">
-			<label for="openSideMenu" class="menuButton">
+			<button for="openSideMenu" class="menuButton" onclick="openNav()">
 				<img src="./assets/menu-button.svg" alt="Menu Button">
-			</label>
+			</button>
 
 			<!-- Slide Out Nav Content -->
-			<div class="slideOutNav">
+			<div class="slideOutNav" id="slideOutNav">
 				<div class="buttonContainer">
-					<!-- <button class="menuClose">x</button> -->
-					<label for="openSideMenu" class="menuClose">x</label>
+					<button for="openSideMenu" class="menuClose" onclick="closeNav()"><i class="fa-solid fa-xmark" aria-hidden="true" alt="Close button"></i></button>
 				</div>
 				<nav>
 					<ul class="mainMenu">
@@ -49,7 +47,7 @@
 							<a href="#">News</a>
 						</li>
 						<li>
-							<a href="#./contact.html">Contact</a>
+							<a href="./contact.html">Contact</a>
 						</li>
 					</ul>
 				</nav>
@@ -80,15 +78,15 @@
 				</div> 
 
 				<a href="#" class="bag">
-					<img src="./assets/shop-bag.svg" alt="Shop Bag">
+					<img src="./assets/shop-bag.svg" alt="Shopping bag icon">
 				</a>
 
 				<div class="counter">
 					<p class="smallCopy">0</p>
 				</div>
-			</div>
+			</div><!-- .searchCart END --> 
 			
-		</div>
+		</div><!-- .wrapper END -->
 	</nav>
 
     <!-- Header -->
