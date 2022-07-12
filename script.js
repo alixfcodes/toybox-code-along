@@ -1,13 +1,14 @@
-// /* Set the width of the side navigation to 250px */
-// function openNav() {
-//   document.getElementById("slideOutNav").style.width = "506px";
-// }
+// /* Set the width of the side navigation to 506px */
+function openNav() {
+    document.getElementById("slideOutNav").style.width = "506px";
+    document.getElementById("slideOutNav").style.left = "0";
+}
 
-// /* Set the width of the side navigation to 0 */
-// function closeNav() {
-//   document.getElementById("slideOutNav").style.width = "0";
-// }
-
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    document.getElementById("slideOutNav").style.width = "0";
+    document.getElementById("slideOutNav").style.left = "-506px";
+}
 
  // Add pop up modal when user clicks on search icon
 
