@@ -802,11 +802,9 @@ footer .footerLogo h4 {
        object-fit: cover;
     display: block;
   }
-
   .categoryList .items {
     padding: 25px;
   }
-
   .footerFlexContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -820,7 +818,6 @@ footer .footerLogo h4 {
   .footerFlexContainer .footerLogo {
     margin-bottom: 30px;
   }
-
   .footerNav {
     width: 80%;
   }
@@ -833,7 +830,6 @@ footer .footerLogo h4 {
     font-size: 1.5rem;
     line-height: 1.7rem;
   }
-
   header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -853,7 +849,6 @@ footer .footerLogo h4 {
     width: 100%;
     padding: 60px 0;
   }
-
   .categoryList {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
@@ -863,7 +858,6 @@ footer .footerLogo h4 {
     padding: 15px;
     margin: 20px 15px;
   }
-
   .play .wrapper .playContent {
     width: 100%;
     padding: 30px;
@@ -874,11 +868,9 @@ footer .footerLogo h4 {
     width: 100%;
     margin: 10px;
   }
-
   .play .wrapper .playContent {
     padding: 15px 15px 20px;
   }
-
   footer .footerFlexContainer {
     margin-bottom: 60px;
   }
@@ -896,7 +888,6 @@ footer .footerLogo h4 {
     margin-bottom: 25px;
     width: 100%;
   }
-
   .social {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
